@@ -16,14 +16,15 @@ export default function ReactSlidingPane({
     className,
     overlayClassName,
     from = 'right',
-    width
+    width,
+    height
 }) {
     const directionClass = `slide-pane_from_${from}`;
 
     return <Modal
         className={ `slide-pane ${directionClass} ${className || ''}` }
         style={{
-            content: { width: width || '80%' }
+            content: { width: width || '80%', height: height || '70%' }
         }}
         overlayClassName={ `slide-pane__overlay ${overlayClassName || ''}`}
         closeTimeoutMS={ CLOSE_TIMEOUT }
