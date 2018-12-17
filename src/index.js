@@ -24,7 +24,7 @@ export default function ReactSlidingPane({
     return <Modal
         className={ `slide-pane ${directionClass} ${className || ''}` }
         style={{
-            content: { width: width || '100%', height: height || '70%' }
+            content: { width: width || '100%', height: height || '55%' }
         }}
         overlayClassName={ `slide-pane__overlay ${overlayClassName || ''}`}
         closeTimeoutMS={ CLOSE_TIMEOUT }
