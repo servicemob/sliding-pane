@@ -32,7 +32,8 @@
   transform: translateX(-100%);
 }
 .slide-pane_from_bottom {
-  margin-top: 10vh;
+  position: absolute;
+  bottom: 0;
   transform: translateY(100%);
 }
 .slide-pane_from_bottom.ReactModal__Content--after-open {
@@ -48,6 +49,7 @@
   right: 0px;
   bottom: 0px;
   background-color: rgba(0,0,0,0);
+  z-index: 1;
 }
 .slide-pane__overlay.ReactModal__Overlay--after-open {
   background-color: rgba(0,0,0,0.3);
