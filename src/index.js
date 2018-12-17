@@ -24,7 +24,7 @@ export default function ReactSlidingPane({
     return <Modal
         className={ `slide-pane ${directionClass} ${className || ''}` }
         style={{
-            content: { width: width || '80%', height: height || '70%' }
+            content: { width: width || '100%', height: height || '70%' }
         }}
         overlayClassName={ `slide-pane__overlay ${overlayClassName || ''}`}
         closeTimeoutMS={ CLOSE_TIMEOUT }
@@ -57,5 +57,6 @@ ReactSlidingPane.propTypes = {
     className: PropTypes.string,
     overlayClassName: PropTypes.string,
     from: PropTypes.oneOf(['left', 'right', 'bottom']),
-    width: PropTypes.string
+    width: PropTypes.string,
+    height: PropTypes.string,
 };
